@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "---\ntitle: \"Assignment 3\"\nauthor: \"Bongani Mveng\"\ndate: \"11 July 2016\"\noutput: pdf_document\n---\n\n##Hello Octocat\n\nI love Octocat. She's the coolest cat in town. \n\n![](C:\\Users\\BonGanI_2\\Pictures\\octocat.png)\n\n```{r quick_look, echo = TRUE}\ndata(anscombe)\ndim(anscombe)\ncolnames(anscombe)\nhead(anscombe)\ntail(anscombe)\nsummary(anscombe)\n```\n\n```{r xy_plot, echo = FALSE}\n#knitr chunk options\nknitr::opts_chunk$set(fig.width = 8,\n                      fig.height = 8,\n                      fig.align = \"center\",\n                      fig.path = './figures/',\n                      dev = 'svg')\nlibrary(dplyr)\nlibrary(ggplot2)\nanscombe.nu <- select(anscombe, x1, y1)\nanscombe.nu\nplot(anscombe.nu$y1~anscombe.nu$x1,\n     main = \"Anscombe Scatterplot\",\n     xlab = \"x1\",\n     ylab = \"y1\",\n     ylim = c(3,12),\n     xlim = c(3, 15),\n     pch = 24)\nabline(lm(y1~x1, data = anscombe), col = \"green\")\n```\n\n",
+    "contents" : "---\ntitle: \"Assignment 3\"\nauthor: \"Bongani Mveng\"\ndate: \"11 July 2016\"\noutput: github_document\n---\n\n##Hello Octocat\n\nI love Octocat. She's the coolest cat in town. \n\n![](C:\\Users\\BonGanI_2\\Pictures\\octocat.png)\n\n```{r quick_look, echo = TRUE}\ndata(anscombe)\ndim(anscombe)\ncolnames(anscombe)\nhead(anscombe)\ntail(anscombe)\nsummary(anscombe)\n```\n\n```{r xy_plot, echo = FALSE}\n# knitr chunk options\nknitr::opts_chunk$set(fig.width = 8,\n                      fig.height = 8,\n                      fig.align = \"center\",\n                      fig.path =  \"figures\",\n                      dev = \"svg\") \nlibrary(dplyr)\nlibrary(ggplot2)\nanscombe.nu <- select(anscombe, x1, y1)\nanscombe.nu\nplot(anscombe.nu$y1~anscombe.nu$x1,\n     main = \"Anscombe Scatterplot\",\n     xlab = \"x1\",\n     ylab = \"y1\",\n     ylim = c(3,12),\n     xlim = c(3, 15),\n     pch = 24)\nabline(lm(y1~x1, data = anscombe), col = \"green\")\n```\n\n\n",
     "created" : 1468251904710.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2669237261",
+    "hash" : "2433771376",
     "id" : "7AE1A710",
-    "lastKnownWriteTime" : 1468294324,
-    "last_content_update" : 1468294324856,
+    "lastKnownWriteTime" : 1468912446,
+    "last_content_update" : 1468912446949,
     "path" : "~/STATS STUFF/Course-mark Assignment 3/Course-mark Assignment 3/README.Rmd",
     "project_path" : "README.Rmd",
     "properties" : {

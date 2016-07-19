@@ -2,7 +2,7 @@
 title: "Assignment 3"
 author: "Bongani Mveng"
 date: "11 July 2016"
-output: pdf_document
+output: github_document
 ---
 
 ##Hello Octocat
@@ -21,12 +21,12 @@ summary(anscombe)
 ```
 
 ```{r xy_plot, echo = FALSE}
-#knitr chunk options
+# knitr chunk options
 knitr::opts_chunk$set(fig.width = 8,
                       fig.height = 8,
                       fig.align = "center",
-                      fig.path = './figures/',
-                      dev = 'svg')
+                      fig.path =  "figures",
+                      dev = "svg") 
 library(dplyr)
 library(ggplot2)
 anscombe.nu <- select(anscombe, x1, y1)
@@ -40,4 +40,5 @@ plot(anscombe.nu$y1~anscombe.nu$x1,
      pch = 24)
 abline(lm(y1~x1, data = anscombe), col = "green")
 ```
+
 
