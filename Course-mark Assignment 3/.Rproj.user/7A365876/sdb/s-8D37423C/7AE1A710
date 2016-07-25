@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Assignment 3\"\nauthor: \"Bongani Mveng\"\ndate: \"11 July 2016\"\noutput: github_document\n---\n\n##Hello Octocat\n\nI love Octocat. She's the coolest cat in town. \n\n![](https://dl.dropboxusercontent.com/u/11805474/painblogr/biostats/images/octocat.png)\n\n```{r quick_look, echo = TRUE}\ndata(anscombe)\ndim(anscombe)\ncolnames(anscombe)\nhead(anscombe)\ntail(anscombe)\nsummary(anscombe)\n```\n\n```{r xy_plot, echo = FALSE, fig.width = 8,fig.height= 8, fig.align= 'center', fig.path = './figures/', dev = 'svg'}\nlibrary(dplyr)\nlibrary(ggplot2)\nanscombe.nu <- select(anscombe, x1, y1)\nanscombe.nu\nplot(anscombe.nu$y1~anscombe.nu$x1,\n     main = \"Anscombe Scatterplot\",\n     xlab = \"x1\",\n     ylab = \"y1\",\n     ylim = c(3,12),\n     xlim = c(3, 15),\n     pch = 24)\nabline(lm(y1~x1, data = anscombe), col = \"green\")\n```\n\n\n",
+    "created" : 1468251904710.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "346016403",
+    "id" : "7AE1A710",
+    "lastKnownWriteTime" : 1469447892,
+    "last_content_update" : 1469447892970,
+    "path" : "~/STATS STUFF/Course-mark Assignment 3/Course-mark Assignment 3/README.Rmd",
+    "project_path" : "README.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
